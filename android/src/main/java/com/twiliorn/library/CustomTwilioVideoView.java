@@ -484,6 +484,8 @@ public class CustomTwilioVideoView extends View implements LifecycleEventListene
          */
         ConnectOptions.Builder connectOptionsBuilder = new ConnectOptions.Builder(this.accessToken);
 
+        connectOptionsBuilder.region("jp1");
+
         if (this.roomName != null) {
             connectOptionsBuilder.roomName(this.roomName);
         }
