@@ -36,9 +36,9 @@ static NSString* cameraDidStopRunning         = @"cameraDidStopRunning";
 static NSString* statsReceived                = @"statsReceived";
 static NSString* networkQualityLevelsChanged  = @"networkQualityLevelsChanged";
 
-static const CMVideoDimensions kRCTTWVideoAppCameraSourceDimensions = (CMVideoDimensions){900, 720};
+static const CMVideoDimensions kRCTTWVideoAppCameraSourceDimensions = (CMVideoDimensions){1280, 720};
 
-static const int32_t kRCTTWVideoCameraSourceFrameRate = 15;
+static const int32_t kRCTTWVideoCameraSourceFrameRate = 24;
 
 TVIVideoFormat *RCTTWVideoModuleCameraSourceSelectVideoFormatBySize(AVCaptureDevice *device, CMVideoDimensions targetSize) {
     TVIVideoFormat *selectedFormat = nil;
