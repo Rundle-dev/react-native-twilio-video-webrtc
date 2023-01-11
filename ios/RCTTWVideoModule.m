@@ -444,7 +444,7 @@ RCT_EXPORT_METHOD(connect:(NSString *)accessToken roomName:(NSString *)roomName 
       
     builder.dominantSpeakerEnabled = dominantSpeakerEnabled ? YES : NO;
 
-    builder.region = "jp1";
+    builder.region = @"jp1";
 
     builder.roomName = roomName;
 
